@@ -1,0 +1,28 @@
+version: '3'
+services:
+
+  front-react:
+    # ... (залиште без змін)
+
+  server-prod:
+    build:
+      context: ./server
+      dockerfile: Dockerfile-production
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db-prod
+      - mongo-prod
+    volumes:
+      - ./var/www/html/images:/var/www/html/images
+      - ./server:/server
+      - /server/node_modules
+      - ./path/to/your/postgresConfig.json:/server/src/config/postgresConfig.json # Додайте цей рядок для монтування конфігураційного файлу
+    command: npm start # Припустимо, що ваш сервер запускається за допомогою команди npm start
+
+  # db-prod та mongo-prod: залиште без змін
+
+volumes:
+  # server-prod: залиште без змін
