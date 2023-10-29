@@ -1,0 +1,67 @@
+// Основний синій колір для шапки
+$blueColor: #2d1582
+
+// Стилі для компонента InfoSection
+.blueSection
+  background-color: $blueColor
+  color: white
+  padding: 20px
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.searchBar
+  display: flex
+  input
+    padding: 5px
+    border: none
+    border-radius: 3px
+    margin-right: 10px
+    &:focus
+      outline: none
+  button
+    background-color: $blueColor
+    color: white
+    border: none
+    border-radius: 3px
+    cursor: pointer
+
+.navigation
+  ul
+    list-style: none
+    display: flex
+    li
+      margin-right: 20px
+      cursor: pointer
+
+// Модифікації для випадаючого списку
+.dropdown
+  span
+    cursor: pointer
+    &:hover + .dropdownContent
+      display: block
+
+.dropdownContent
+  display: none
+  position: absolute
+  background-color: $blueColor
+  color: white
+  min-width: 160px
+  z-index: 1
+  text-align: left
+  border-radius: 3px
+  padding: 10px
+
+  p
+    margin: 0
+    padding: 5px
+
+// Стилі для вертикального списку "Naming Contests"
+.columnList
+  display: flex
+  flex-direction: column
+  list-style: none
+  margin: 0
+  padding: 0
