@@ -1,67 +1,62 @@
-// Основний синій колір для шапки
-$blueColor: #2d1582
+.serviceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
 
-// Стилі для компонента InfoSection
-.blueSection
-  background-color: $blueColor
-  color: white
-  padding: 20px
+.serviceTag {
+  /* Додайте стилі для span.serviceTag, якщо необхідно */
+}
 
-.header
-  display: flex
-  justify-content: space-between
-  align-items: center
+.serviceTitle {
+  font-size: 24px;
+  margin-top: 10px;
+}
 
-.searchBar
-  display: flex
-  input
-    padding: 5px
-    border: none
-    border-radius: 3px
-    margin-right: 10px
-    &:focus
-      outline: none
-  button
-    background-color: $blueColor
-    color: white
-    border: none
-    border-radius: 3px
-    cursor: pointer
+.serviceText {
+  margin-top: 10px;
+  max-width: 300px; /* Максимальна ширина тексту */
+  text-align: center; /* Центрування тексту */
+}
 
-.navigation
-  ul
-    list-style: none
-    display: flex
-    li
-      margin-right: 20px
-      cursor: pointer
+.serviceContainerItems {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
 
-// Модифікації для випадаючого списку
-.dropdown
-  span
-    cursor: pointer
-    &:hover + .dropdownContent
-      display: block
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.2); /* Рамка з напівпрозорою чорною обводкою */
+  border-radius: 8px; /* Закруглення кутів рамки */
+  padding: 20px;
+}
 
-.dropdownContent
-  display: none
-  position: absolute
-  background-color: $blueColor
-  color: white
-  min-width: 160px
-  z-index: 1
-  text-align: left
-  border-radius: 3px
-  padding: 10px
+.serviceImage {
+  max-width: 25%;
+  height: auto;
+  border-radius: 8px; /* Додайте стилі для закруглення кутів, якщо потрібно */
+  margin-bottom: 10px; /* Відстань між зображенням і текстом */
+}
 
-  p
-    margin: 0
-    padding: 5px
+.serviceBtn {
+  background-color: #3498db; /* Світлиший блакитний колір */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 10px; /* Додайте margin-top для розташування нижче тексту */
+}
 
-// Стилі для вертикального списку "Naming Contests"
-.columnList
-  display: flex
-  flex-direction: column
-  list-style: none
-  margin: 0
-  padding: 0
+.serviceBtn:hover {
+  background-color: #297fb8; /* Більш насичений блакитний колір при наведенні */
+  margin-top: 8px; /* Збільште margin-top при наведенні */
+}

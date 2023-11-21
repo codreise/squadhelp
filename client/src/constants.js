@@ -81,4 +81,24 @@ export default {
       items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy'],
     },
   ],
+  INFO_SECTION: [
+    {
+      title: 'Launch a Contest',
+      text: 'Work with hundreds of creative experts to get custom name suggestions for your business or brand. All names are auto-checked for URL availability.',
+      image: 'people-image1.svg',
+      btnText: 'Launch a Contest',
+    },
+    {
+      title: 'Explore Names For Sale',
+      text: 'Our branding team has curated thousands of pre-made names that you can purchase instantly. All names include a matching URL and a complimentary Logo Design',
+      image: 'documents-image2.svg',
+      btnText: 'Explore Names For Sale',
+    },
+    {
+      title: 'Agency-level Managed Contests',
+      text: 'Our Managed contests combine the power of crowdsourcing with the rich experience of our branding consultants. Get a complete agency-level experience at a fraction of Agency costs',
+      image: 'lamp-image3.svg',
+      btnText: 'Learn More',
+    },
+  ],
 };
