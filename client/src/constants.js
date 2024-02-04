@@ -87,6 +87,11 @@ export default {
     play_video_btn: "Play Video",
     image: 'phones.svg',
   },
+
+  HOW_DO_NAMING_CONTESTS: {
+    image: 'cup-image1.svg',
+    image: 'man-image2.svg',
+  },
   
   INFO_SECTION: [
     {
@@ -107,5 +112,5 @@ export default {
       image: 'lamp-image3.svg',
       btnText: 'Learn More',
     },
-  ],
-};
+  ]
+}

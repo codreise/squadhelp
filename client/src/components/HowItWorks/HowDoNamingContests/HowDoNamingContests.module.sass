@@ -1,0 +1,72 @@
+.namingContestsSection
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: row
+  text-align: center
+
+.namingContestsImage
+  width: 25%  // Зменшено ширину зображення
+  margin-top: -50px  // Змінено відступ для вирівнювання зверху
+
+.namingContestsTitle
+  font-size: 36px
+  font-weight: bold
+  margin: 20px 0
+  text-align: center  // Додано вирівнювання по центру
+  @media(max-width: 920px)
+    font-size: 32px  // Зменшено розмір шрифта для малих екранів
+
+.namingContestsItems
+  display: flex
+  align-items: center
+  flex-direction: column
+  width: 45%  // Зменшено ширину для списку
+
+.namingContestsList
+  list-style: none
+  padding: 50px  // Збільшено відступ для списку
+  @media(max-width: 1200px)
+    padding: 20px  // Адаптація для маленьких екранів
+
+.namingContestsListItem
+  position: relative
+  padding: 20px
+  margin: 40px 0
+  border: 1px solid #e7eaf3
+  border-radius: 10px
+  text-align: left
+  display: flex
+  align-items: center
+  gap: 20px
+  box-shadow: 0 4px 11px #aeaeaec7
+  color: #919aa4
+  @media(max-width: 920px)
+    margin: 15px 0
+    &::after
+      display: none
+    &::before
+      display: none
+  &::after
+    position: absolute
+    left: -41px
+    width: 0.0625rem
+    height: 150%
+    border-right: 1px solid #e7eaf3
+    content: ""
+  &::before
+    position: absolute
+    left: -40px
+    width: 30px
+    height: 1px
+    border-top: 1px solid #e7eaf3
+    content: ""
+  &:last-child::after
+    top: -104px
+  &:first-child::after
+    bottom: -104px
+  span
+    font-size: 3.5rem
+    font-weight: 300
+    line-height: 1.2
+    color: #377dff  // Блакитний колір тексту
