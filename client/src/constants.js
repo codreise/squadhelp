@@ -81,6 +81,13 @@ export default {
       items: ['Terms of Service', 'Privacy Policy', 'Cookie Policy'],
     },
   ],
+
+  HOW_DOES_SECTION: {
+    title: "How Does Squadhelp Work?",
+    play_video_btn: "Play Video",
+    image: 'phones.svg',
+  },
+  
   INFO_SECTION: [
     {
       title: 'Launch a Contest',
