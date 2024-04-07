@@ -3,52 +3,48 @@ import CONSTANTS from '../../../constants';
 import styles from './HowDoNamingContests.module.sass';
 
 const HowDoNamingContests = () => {
-  const staticImagesPath = CONSTANTS.STATIC_IMAGES_PATH;
-
   return (
     <>
       <hr />
-      <section className={styles.namingContestsSection}>
+      <section className={styles.featuresSection}>
         <img
-          className={styles.namingContestsImage}
-          src={`${staticImagesPath}howItWorks/cup-image1.svg`}
+          className={styles.featuresImage}
+          src={`${CONSTANTS.STATIC_IMAGES_PATH}howItWorks/cup-image1.svg`}
           alt="cup-image1"
         />
-        <h2 className={styles.namingContestsTitle}>How Do Naming Contests Work?</h2>
-        <div className={styles.namingContestsItems}>
+        <h2 className={styles.featuresTitle}>How Do Naming Contests Work?</h2>
+        <div className={styles.featuresItems}>
           <img
-            className={styles.namingContestsImage}
-            src={`${staticImagesPath}howItWorks/man-image2.svg`}
+            className={styles.featuresImage}
+            src={`${CONSTANTS.STATIC_IMAGES_PATH}howItWorks/man-image2.svg`}
             alt="man-image2"
           />
-          <ul className={styles.namingContestsList}>
-            {[1, 2, 3, 4].map((number) => (
-              <li key={number} className={styles.namingContestsListItem}>
-                <span>{number}.</span>
-                {getContentForStep(number)}
-              </li>
-            ))}
+          <ul className={styles.featuresList}>
+            <li className={styles.featuresListItem}>
+              <span>1.</span>
+              Fill out your Naming Brief and begin receiving name ideas in
+              minutes
+            </li>
+            <li className={styles.featuresListItem}>
+              <span>2.</span>
+              Rate the submissions and provide feedback to creatives. Creatives
+              submit even more names based on your feedback.
+            </li>
+            <li className={styles.featuresListItem}>
+              <span>3.</span>
+              Our team helps you test your favorite names with your target
+              audience. We also assist with Trademark screening.
+            </li>
+            <li className={styles.featuresListItem}>
+              <span>4.</span>
+              Pick a Winner. The winner gets paid for their submission.
+            </li>
           </ul>
         </div>
       </section>
       <hr />
     </>
   );
-};
-
-const getContentForStep = (step) => {
-  switch (step) {
-    case 1:
-      return "Your first step is to fill out the Naming Brief. You'll start receiving name ideas within minutes.";
-    case 2:
-      return "Rate the submissions and provide feedback to creatives. The more feedback you give, the more name ideas you'll receive.";
-    case 3:
-      return "Our team helps you test your favorite names with your target audience. We also assist with Trademark screening.";
-    case 4:
-      return "Choose a Winner. The winning creative gets paid for their submission.";
-    default:
-      return '';
-  }
 };
 
 export default HowDoNamingContests;
