@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './InfoSection.module.sass';
+import styles from './ListOfServices.module.sass';
 import CONSTANTS from '../../../constants';
 import { Link } from 'react-router-dom';
 
-const InfoSection = () => {
-  const items = CONSTANTS.INFO_SECTION;
+const ListOfServices = () => {
+  const items = CONSTANTS.LIST_SERVICES;
 
   return (
     <section className={styles.serviceSection}>
@@ -35,4 +35,4 @@ const InfoSection = () => {
   );
 };
 
-export default InfoSection;
+export default ListOfServices;

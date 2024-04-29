@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import InfoSection from '../../components/HowItWorks/InfoSection/InfoSection';
+import ListOfServices from '../../components/HowItWorks/InfoSection/ListOfServices';
 import HowDoes from '../../components/HowItWorks/HowDoesSection/HowDoes';
 import HowDoNamingContests from '../../components/HowItWorks/HowDoNamingContests/HowDoNamingContests';
 import InformationSection from '../../components/HowItWorks/InformationSection/InformationSection';
@@ -13,7 +13,7 @@ const HowItWorks = () => {
         <Header />
         <main>
             <HowDoes />
-            <InfoSection />
+            <ListOfServices />
             <HowDoNamingContests />
             <InformationSection/>
         </main>

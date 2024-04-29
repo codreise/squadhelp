@@ -93,7 +93,7 @@ export default {
     image: 'man-image2.svg',
   },
   
-  INFO_SECTION: [
+  LIST_SERVICES: [
     {
       title: 'Launch a Contest',
       text: 'Work with hundreds of creative experts to get custom name suggestions for your business or brand. All names are auto-checked for URL availability.',
