@@ -278,5 +278,20 @@ export default {
           },
         ],
       },
-    ]
-  }
+    ],
+
+    CONT_SECTION: [
+        {
+          image: 'stars.svg',
+          text: '<span>4.9 out of 5 stars</span> from 25,000+ customers.',
+        },
+        {
+          image: 'photo.png',
+          text: 'Our branding community stands <span>200,000+</span> strong.',
+        },
+        {
+          image: 'stats.svg',
+          text: '<span>140+ Industries</span> supported across more than <span>85 countries</span> – and counting.',
+        },
+      ],
+    };
